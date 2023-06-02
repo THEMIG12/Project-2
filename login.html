@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login page</title>
+    <link rel="icon" href="img/University_of_Jordan_Logo.svg.png" sizes="32x32" />
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src='https://www.google.com/reCAPTCHA/api.js' async defer></script>
+    <navbar>
+        <ul>
+            <li>
+                <div class="nav mainicon">Login</div>
+            </li>
+            <a href="http://ju.edu.jo/" action="_blank">
+                <img class="julogo" src="img/University_of_Jordan_Logo.svg.png" height="100" weidth="100">
+            </a>
+        </ul>
+    </navbar>
+</head>
+
+<body>
+    <main>
+        <form class="signin-form">
+            <table id="login">
+                <thead class="login-header">
+                    <tr>
+                        <td colspan="2" class="login-header">
+                            <label class="login-data">Login</label>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="login-content">
+                        <td class="login-row">
+                            <label class="login-data">Username</label>
+                        </td>
+                        <td class="login-filed">
+                            <input id="Username" name="user" type="text" required>
+                        </td>
+                    </tr>
+                    <tr class="login-content">
+                        <td class="login-row">
+                            <label class="login-data">Password</label>
+                        </td>
+                        <td class="login-filed">
+                            <input id="Password" name="pass" type="password" required>
+                            <i class="far fa-eye" id="togglePassword" style="margin-left: -15px; cursor: pointer;"></i>
+                        </td>
+                    </tr>
+                    <tr class="login-content">
+                        <td class="login-row">
+                            <li class="login-button">
+                                <input id="submit" name="Submit" type="submit">
+                            </li>
+                        </td>
+                        <td class="login-row">
+                            <li class="login-button">
+                                <input id="reset" name="Reset" type="reset">
+                            </li>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="have-email">
+                don't have an account? <a class="have-email" href="signup.html">Register</a>
+            </div>
+        </form>
+    </main>
+</body>
+<script>
+    function toggleVisibility() {
+        var getPasword = document.getElementById("Password");
+        if (getPasword.type === "password") {
+            getPasword.type = "text";
+        } else {
+            getPasword.type = "password";
+        }
+    }
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#Password');
+
+    togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>
+<footer>
+    <p>&copy; 2023 University of Jordan Parking. All rights reserved.</p>
+</footer>
+
+</html>

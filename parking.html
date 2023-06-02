@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/University_of_Jordan_Logo.svg.png" sizes="32x32" />
+    <title>Parking</title>
+    <script src="js/Date.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <navbar>
+        <ul>
+            <li>
+                <div><a class="nav" href="homepage.html">Home</a></div>
+            </li>
+            <li>
+                <div><a class="nav" href="booked.html">Booked</a></div>
+            </li>
+            <li>
+                <div class="nav mainicon">Parking Map</div>
+            </li>
+            <li>
+                <div><a class="nav" href="contact.html">Contact Us</a></div>
+            </li>
+            <li>
+                <div><a class="nav login" href="#">Logout</a></div>
+            </li>
+            <a href="http://ju.edu.jo/" action="_blank">
+                <img class="julogo" src="img/University_of_Jordan_Logo.svg.png" height="100" weidth="100">
+            </a>
+        </ul>
+    </navbar>
+</head>
+
+<body>
+    <form class="rules">
+        <div>
+            <label for="name">Time:<br></label>
+            <div id="timeNow"></div>
+            <p id="date"></p>
+        </div>
+    </form>
+    <br>
+    <p>Click on the area to store the park:</p>
+
+    <img src="img/Parking2.png" id="Parking" usemap="#Parking" width="100%"
+        height="100%"><!--width="2009" height="2364"-->
+    <map name="Parking">
+        <div class="upperside">
+            <area shape="rect" onclick="myFunction()" coords="120,91,156,156" id="226" href="226.htm">
+            <area shape="rect" onclick="myFunction()" coords="156,91,191,156" id="225" href="225.htm">
+            <area shape="rect" onclick="myFunction()" coords="383,182,455,312" id="224" href="224.htm">
+            <area shape="rect" onclick="myFunction()" coords="455,182,524,312" id="223" href="223.htm">
+            <area shape="rect" onclick="myFunction()" coords="524,182,597,316" id="222" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="596,182,666,316" id="221" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="666,185,738,316" id="220" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="738,182,814,315" id="219" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="809,190,881,315" id="218" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="883,182,950,315" id="217" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="946,182,1023,315" id="204" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1023,154,1099,283" id="203" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1099,154,1100,280" id="202" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1100,146,1170,283" id="201" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1170,146,1246,278" id="200" href="computer.htm">
+            <!--area shape="rect" onclick="myFunction()" coords="1246,146,1315,278" id="204" href="computer.htm"-->
+            <area shape="rect" onclick="myFunction()" coords="1312,144,1385,273" id="199" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1380,140,1456,268" id="198" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1456,126,1518,253" id="197" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1518,124,1590,251" id="196" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1590,122,1664,250" id="195" href="computer.htm">
+        </div>
+        <div class="rightside">
+            <area shape="rect" onclick="myFunction()" coords="1652,281,1782,352" id="146" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1652,352,1782,427" id="145" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1652,427,1782,497" id="144" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1652,497,1782,566" id="143" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1652,566,1782,637" id="142" href="computer.htm">
+            <!--  -->
+            <area shape="rect" onclick="myFunction()" coords="1752,635,1913,710" id="53" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1785,705,1911,782" id="52" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1777,777,1905,856" id="51" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1775,848,1902,926" id="50" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1773,919,1898,998" id="49" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1770,992,1895,1070" id="48" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1766,1063,1893,1140" id="47" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1764,1134,1890,1211" id="46" href="computer.htm">
+            <!--  -->
+            <area shape="rect" onclick="myFunction()" coords="1846,1220,1977,1291" id="7" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1846,1292,1977,1366" id="6" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1846,1366,1977,1436" id="5" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1846,1436,1977,1508" id="4" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1846,1508,1977,1579" id="3" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1846,1579,1977,1651" id="2" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1846,1651,1977,1722" id="1" href="computer.htm">
+            <!-- ability people -->
+            <area shape="rect" onclick="myFunction()" coords="1837,1747,1967,1819" id="a1" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1837,1819,1967,1890" id="a2" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1837,2001,1967,2072" id="a3" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="1837,2072,1967,2144" id="a4" href="computer.htm">
+        </div>
+        <div class="leftside">
+            <area shape="rect" onclick="myFunction()" coords="202,420,327,495" id="216" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="198,495,326,569" id="215" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="164,573,289,647" id="214" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="93,642,221,716" id="213" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="79,715,207,790" id="212" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="77,786,205,864" id="211" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="74,859,203,935" id="210" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="73,931,200,1006" id="209" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="69,1002,199,1079" id="208" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="68,1074,197,1150" id="207" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="67,1146,194,1220" id="206" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="65,1217,191,1292" id="205" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="62,1290,190,1363" id="176" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="60,1360,187,1435" id="175" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="57,1433,185,1507" id="174" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="54,1506,182,1579" id="173" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="53,1576,180,1651" id="172" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="51,1648,178,1723" id="171" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="48,1719,177,1794" id="170" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="46,1790,174,1867" id="169" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="45,1861,172,1938" id="168" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+        </div>
+        <div class="mid-upper">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,491,581" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="490,451,560,580" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="560,450,632,579" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="630,447,703,578" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="701,446,773,577" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="772,446,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+
+            <area shape="rect" onclick="myFunction()" coords="418,453,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="490,582,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+            <area shape="rect" onclick="myFunction()" coords="42,1935,170,2011" id="167" href="computer.htm">
+
+        </div>
+        <div class="mid-mid-upper">
+
+        </div>
+        <div class="mid-mid-lower">
+
+        </div>
+        <div class="mid-lower">
+
+        </div>
+    </map>
+
+</body>
+
+<footer>
+    <p>&copy; 2023 University of Jordan Parking. All rights reserved.</p>
+</footer>
+
+</html>

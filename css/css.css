@@ -1,0 +1,211 @@
+body {
+    background-image: url("img/Science parking.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #2191c0;
+}
+
+.nav {
+    border-radius: 70px;
+    padding: 40px 16px 42px;
+}
+
+.julogo {
+    justify-content: left;
+    float: right;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.login-data,
+.signup-data {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover,
+.nav:hover{
+    background-color: #18759c;
+}
+
+
+/*
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 40px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+
+.date {
+    color: #f1f1f1;
+}
+
+
+.signin-form,
+.signup-form,
+.rules {
+    border: 3px solid #333333;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    content: "";
+    clear: both;
+    display: table;
+    background-color: #2191c0;
+}
+
+.login-button,
+.signup-button {
+    list-style-type: none;
+}
+
+.login-header,
+.signup-header{
+    font-size: 20px;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button] {
+    background-color: #0078ae;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin: 8px 0;
+    padding: 7px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    overflow: visible;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover {
+    background-color: #77d5f7;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"]
+ {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightgreen;
+}
+
+.have-email {
+    text-decoration: none;
+    color: #fff;
+}
+
+div {
+    background-color: #2191c0;
+    color: #f9f9f9;
+}
+
+.intro {
+    margin: 3px 3px;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+
+.login {
+    justify-content: right;
+    float: right;
+}
+
+.rules {
+    margin-top: auto;    
+    padding: auto;
+    text-align: center;
+    width: 300px;
+}
+
+
+main {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #18759c;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2191c0;
+    color: #fff;
+    font-size: 14px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.mainicon{
+    background-color:#18759c;
+}
